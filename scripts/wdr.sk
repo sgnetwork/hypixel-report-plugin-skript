@@ -1,0 +1,131 @@
+options:
+	version: 0.1
+	author: SmartGaming - Team
+	support: TS.SG-N.NET
+
+
+command /watchdogreport [<player>] [<string>]:
+	aliases: /wdr
+	trigger:
+		if argument 2 is not set:
+			send "&cUse: /watchdogreport (username) (type of hacks)"
+		if argument 1 is "%player%":
+			send "&f[WATCHDOG] &cYou can't report yourself!"
+			stop
+		else if argument 2 is "Fly":
+			if argument 1 is set:
+				send "&f[WATCHDOG] &aYou reported &e%arg 2% &afor &e[Fly]"
+				send "&f[WATCHDOG] &aMake sure to open a report at"
+				send "&b&nYOUR-Website"
+				send "&f[WATCHDOG] &c&oWarning! Abuse of this command is punishable."
+				loop all players:
+					if loop-player has permission "SG.admin":
+						send "&f[WATCHDOG] &e%player% &ahas reported &e%arg 2% &afor &e[Fly]" to loop-player
+			else:
+				send "&f[WATCHDOG] &fI didn't recognize those hacks! Maybe try: &eFly,"
+				send " &eKillAura, AutoClicker, Speed, AntiKnockback, Reach, Dolphin"
+				send "&c&lIf the type of hack isn't listed, please open a"
+				send " &c&lreport at YOUR-Website"
+		else if argument 2 is "KillAura":
+			if argument 1 is set:
+				send "&f[WATCHDOG] &aYou reported &e%arg 1% &afor &e[KillAura]"
+				send "&f[WATCHDOG] &aMake sure to open a report at"
+				send "&b&nYOUR-Website"
+				send "&f[WATCHDOG] &c&oWarning! Abuse of this command is punishable."
+				loop all players:
+					if loop-player has permission "SG.admin":
+					send "&f[WATCHDOG] &e%player% &ahas reported &e%arg 2% &afor &e[KillAura]" to loop-player
+			else:
+				send "&f[WATCHDOG] &fI didn't recognize those hacks! Maybe try: &eFly,"
+				send " &eKillAura, AutoClicker, Speed, AntiKnockback, Reach, Dolphin"
+				send "&c&lIf the type of hack isn't listed, please open a"
+				send " &c&lreport at YOUR-Website"
+		else if argument 2 is "ka":
+			if argument 1 is set:
+				send "&f[WATCHDOG] &aYou reported &e%arg 1% &afor &e[KillAura]"
+				send "&f[WATCHDOG] &aMake sure to open a report at"
+				send "&b&nYOUR-Website"
+				send "&f[WATCHDOG] &c&oWarning! Abuse of this command is punishable."
+				loop all players:
+					if loop-player has permission "SG.admin":
+					send "&f[WATCHDOG] &e%player% &ahas reported &e%arg 2% &afor &e[KillAura]" to loop-player
+			else:
+				send "&f[WATCHDOG] &fI didn't recognize those hacks! Maybe try: &eFly,"
+				send " &eKillAura, AutoClicker, Speed, AntiKnockback, Reach, Dolphin"
+				send "&c&lIf the type of hack isn't listed, please open a"
+				send " &c&lreport at YOUR-Website"
+		else if argument 2 is "AutoClicker":
+			if argument 1 is set:
+				send "&f[WATCHDOG] &aYou reported &e%arg 2% &afor &e[AutoClicker]"
+				send "&f[WATCHDOG] &aMake sure to open a report at"
+				send "&b&nYOUR-Website"
+				send "&f[WATCHDOG] &c&oWarning! Abuse of this command is punishable."
+				loop all players:
+					if loop-player has permission "SG.admin":
+						send "&f[WATCHDOG] &e%player% &ahas reported &e%arg 2% &afor &e[AutoClicker]" to loop-player
+			else:
+				send "&f[WATCHDOG] &fI didn't recognize those hacks! Maybe try: &eFly,"
+				send " &eKillAura, AutoClicker, Speed, AntiKnockback, Reach, Dolphin"
+				send "&c&lIf the type of hack isn't listed, please open a"
+				send " &c&lreport at YOUR-Website"
+		else if argument 2 is "Speed":
+			if argument 1 is set:
+				send "&f[WATCHDOG] &aYou reported &e%arg 2% &afor &e[Speed]"
+				send "&f[WATCHDOG] &aMake sure to open a report at"
+				send "&b&nYOUR-Website"
+				send "&f[WATCHDOG] &c&oWarning! Abuse of this command is punishable."
+				loop all players:
+					if loop-player has permission "SG.admin":
+						send "&f[WATCHDOG] &e%player% &ahas reported &e%arg 2% &afor &e[Speed]" to loop-player
+			else:
+				send "&f[WATCHDOG] &fI didn't recognize those hacks! Maybe try: &eFly,"
+				send " &eKillAura, AutoClicker, Speed, AntiKnockback, Reach, Dolphin"
+				send "&c&lIf the type of hack isn't listed, please open a"
+				send " &c&lreport at YOUR-Website"
+		else if argument 2 is "AntiKnockback":
+			if argument 1 is set:
+				send "&f[WATCHDOG] &aYou reported &e%arg 2% &afor &e[AntiKnockback]"
+				send "&f[WATCHDOG] &aMake sure to open a report at"
+				send "&b&nYOUR-Website"
+				send "&f[WATCHDOG] &c&oWarning! Abuse of this command is punishable."
+				loop all players:
+					if loop-player has permission "SG.admin":
+						send "&f[WATCHDOG] &e%player% &ahas reported &e%arg 2% &afor &e[AntiKnockback]" to loop-player
+			else:
+				send "&f[WATCHDOG] &fI didn't recognize those hacks! Maybe try: &eFly,"
+				send " &eKillAura, AutoClicker, Speed, AntiKnockback, Reach, Dolphin"
+				send "&c&lIf the type of hack isn't listed, please open a"
+				send " &c&lreport at YOUR-Website"
+		else if argument 2 is "Reach":
+			if argument 1 is set:
+				send "&f[WATCHDOG] &aYou reported &e%arg 2% &afor &e[Reach]"
+				send "&f[WATCHDOG] &aMake sure to open a report at"
+				send "&b&nYOUR-Website"
+				send "&f[WATCHDOG] &c&oWarning! Abuse of this command is punishable."
+				loop all players:
+					if loop-player has permission "SG.admin":
+						send "&f[WATCHDOG] &e%player% &ahas reported &e%arg 2% &afor &e[Reach]" to loop-player
+			else:
+				send "&f[WATCHDOG] &fI didn't recognize those hacks! Maybe try: &eFly,"
+				send " &eKillAura, AutoClicker, Speed, AntiKnockback, Reach, Dolphin"
+				send "&c&lIf the type of hack isn't listed, please open a"
+				send " &c&lreport at YOUR-Website"
+		else if argument 2 is "Dolphin":
+			if argument 1 is set:
+				send "&f[WATCHDOG] &aYou reported &e%arg 2% &afor &e[Dolphin]"
+				send "&f[WATCHDOG] &aMake sure to open a report at"
+				send "&b&nYOUR-Website"
+				send "&f[WATCHDOG] &c&oWarning! Abuse of this command is punishable."
+				loop all players:
+					if loop-player has permission "SG.admin":
+						send "&f[WATCHDOG] &e%player% &ahas reported &e%arg 2% &afor &e[Dolphin]" to loop-player
+			else:
+				send "&f[WATCHDOG] &fI didn't recognize those hacks! Maybe try: &eFly,"
+				send " &eKillAura, AutoClicker, Speed, AntiKnockback, Reach, Dolphin"
+				send "&c&lIf the type of hack isn't listed, please open a"
+				send " &c&lreport at YOUR-Website"
+		else if argument 2 is not "Fly" or "KillAura" or "AutoClicker" or "Speed" or "AntiKnockback" or "Reach" or "Dolphin":
+			send "&f[WATCHDOG] &fI didn't recognize those hacks! Maybe try: &eFly,"
+			send " &eKillAura, AutoClicker, Speed, AntiKnockback, Reach, Dolphin"
+			send "&c&lIf the type of hack isn't listed, please open a"
+			send " &c&lreport at YOUR-Website"
